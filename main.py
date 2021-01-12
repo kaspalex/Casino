@@ -1,3 +1,9 @@
+from Casino import Casino
+from Roulette import Roulette
+from MachineASous import MachineASous
+from Joueur import Joueur
+
+
 def main():
     casino = Casino(100000)
     jeu1 = Roulette("my wheel", casino)
@@ -5,5 +11,7 @@ def main():
     joueur = Joueur("Clement", 1000)
     joueur.entrer_casino(casino)
     joueur.jouer()
+
+
 if __name__ == '__main__':
     main()
